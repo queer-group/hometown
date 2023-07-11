@@ -1,0 +1,3 @@
+[submodule "app/javascript/styles/tangerine"]
+	path = app/javascript/styles/tangerine
+	url = https://github.com/nileane/TangerineUI-for-Mastodon.git
