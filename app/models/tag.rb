@@ -29,7 +29,7 @@ class Tag < ApplicationRecord
   HASHTAG_SEPARATORS = "_\u00B7\u200c"
   HASHTAG_NAME_PAT = "([[:word:]_][[:word:]#{HASHTAG_SEPARATORS}]*[[:alpha:]#{HASHTAG_SEPARATORS}][[:word:]#{HASHTAG_SEPARATORS}]*[[:word:]_])|([[:word:]_]*[[:alpha:]][[:word:]_]*)"
 
-  HASHTAG_RE = /(?:^|[^\/\)\w])#(#{HASHTAG_NAME_PAT})/i
+  HASHTAG_RE = %r{(?<![=/)\w])#(#{HASHTAG_NAME_PAT})}i
   HASHTAG_NAME_RE = /\A(#{HASHTAG_NAME_PAT})\z/i
   HASHTAG_INVALID_CHARS_RE = /[^[:alnum:]#{HASHTAG_SEPARATORS}]/
 
