@@ -26,6 +26,15 @@ $ui-primary-color: #9bcbed;
 $ui-secondary-color: $classic-base-color !default;
 $ui-highlight-color: $blueberry;
 
+$ui-button-background-color: $blueberry !default;
+
+$ui-button-secondary-color: $classic-base-color !default;
+$ui-button-secondary-border-color: $classic-base-color !default;
+$ui-button-secondary-focus-color: $white !default;
+
+$ui-button-tertiary-color: $pink !default;
+$ui-button-tertiary-border-color: $pink !default;
+
 $primary-text-color: $black !default;
 $darker-text-color: $classic-base-color !default;
 $dark-text-color: #444b5d;
